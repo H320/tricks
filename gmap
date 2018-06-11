@@ -4,8 +4,15 @@
     <script type="text/javascript">
       Object.defineProperty(HTMLScriptElement.prototype, "__src__", Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype, "src"));
       Object.defineProperty(HTMLScriptElement.prototype, "src", {
-        configurable: true, enumerable: true, get() { return this.__src__; },
-        set(v_src) { if (!v_src || !v_src.startsWith("https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate")) this.__src__ = v_src; }
+        configurable: true, 
+        enumerable: true, 
+        get() { 
+          return this.__src__; 
+        },
+        set(v_src) { 
+          if (!v_src || !v_src.startsWith("https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate")) 
+            this.__src__ = v_src; 
+        }
       });
     </script>
     <script src="https://maps.google.com/maps/api/js?..."></script>
