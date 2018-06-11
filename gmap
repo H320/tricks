@@ -9,9 +9,9 @@
         get() { 
           return this.__src__; 
         },
-        set(v_src) { 
-          if (!v_src || !v_src.startsWith("https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate")) 
-            this.__src__ = v_src; 
+        set(new_src) { 
+          if (!new_src || !new_src.startsWith("https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate")) 
+            this.__src__ = new_src; 
         }
       });
     </script>
