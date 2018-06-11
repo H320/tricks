@@ -1,15 +1,6 @@
 <html>
   <head>
-    <base href="/"/>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-    <meta th:content="#{bankTitle}" name="description" />
-    <meta th:content="#{corporation}" name="author" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
-    <title th:text="#{bankTitle}"></title>
-    <link th:href="#{favicon}" type="image/png" rel="icon" />
-    <link th:href="@{/app/dis/css/plugins.css(v=#{resource.version})}" rel="stylesheet" type="text/css" />
-    <link th:href="@{/app/dis/css/app.css(v=#{resource.version})}" rel="stylesheet" type="text/css" />
+    ...
     <script type="text/javascript">
       Object.defineProperty(HTMLScriptElement.prototype, "__src__", Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype, "src"));
       Object.defineProperty(HTMLScriptElement.prototype, "src", {
@@ -17,6 +8,8 @@
         set(v_src) { if (!v_src || !v_src.startsWith("https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate")) this.__src__ = v_src; }
       });
     </script>
+    <script src="https://maps.google.com/maps/api/js?..."></script>
+    ...
   </head>
 ...
 </html>
