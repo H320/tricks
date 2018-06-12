@@ -1,7 +1,7 @@
 <html>
   <head>
     ...
-    <!-- کافی است لینک زیر رو با روش زیر مسدود کنید تا گوگل مپ در وب سایت شما بدون مشکل اجرا شود  -->
+    <!-- کافی است لینک زیر رو با روش زیر مسدود کنید تا گوگل مپ در وب سایت شما بدون مشکل اجرا بشه  -->
     <script type="text/javascript">
       Object.defineProperty(HTMLScriptElement.prototype, "__src__", Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype, "src"));
       Object.defineProperty(HTMLScriptElement.prototype, "src", {
