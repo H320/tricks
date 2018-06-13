@@ -5,6 +5,8 @@
     <!-- گوگل مپ ابتدا بارگیری شده و سپس دامنه را توسط لینک زیر بررسی میکند و سرویس را متوقف میکند -->
     <!-- با مسدود کردن این لینک روند بررسی دامنه را متوقف کرده و از بسته شدن سرویس جلوگیری میکنیم  -->
     <!-- تمام امکانات سرویس گوگل مپ بدون مشکل اجرا خواهند شد  -->
+    <!-- در این روش محدودیت بازدید نیز برداشته شده است  -->
+    <!-- نیازی به وارد کردن کلید ندارید و کافی است مطابق زیر اسکریپت گوگل را اضافه کنید  -->
     <script type="text/javascript">
       Object.defineProperty(HTMLScriptElement.prototype, "__src__", Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype, "src"));
       Object.defineProperty(HTMLScriptElement.prototype, "src", {
@@ -14,12 +16,13 @@
           return this.__src__; 
         },
         set(new_src) { 
-          if (!new_src || !new_src.startsWith("https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate")) 
+          if (!new_src || !(new_src.startsWith("https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate") ||
+                            new_src.startsWith("https://maps.googleapis.com/maps/api/js/QuotaService.RecordEvent")) 
             this.__src__ = new_src; 
         }
       });
     </script>
-    <script src="https://maps.google.com/maps/api/js?..."></script>
+    <script src="https://maps.google.com/maps/api/js?key=&language=fa"></script>
     ...
   </head>
   ...
