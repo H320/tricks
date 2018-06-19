@@ -17,7 +17,7 @@
         },
         set(new_src) { 
           if (!new_src || !(new_src.startsWith("https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate") ||
-                            new_src.startsWith("https://maps.googleapis.com/maps/api/js/QuotaService.RecordEvent")); 
+                            new_src.startsWith("https://maps.googleapis.com/maps/api/js/QuotaService.RecordEvent"))) 
             this.__src__ = new_src; 
         }
       });
