@@ -5,7 +5,6 @@
     <!-- گوگل مپ ابتدا بارگیری شده و سپس دامنه را توسط لینک زیر بررسی میکند و سرویس را متوقف میکند -->
     <!-- با مسدود کردن این لینک روند بررسی دامنه را متوقف کرده و از بسته شدن سرویس جلوگیری میکنیم  -->
     <!-- در این روش محدودیت بازدید نیز برداشته شده است  -->
-    <!-- حتی نیازی به وارد کردن کلید ندارید و کافی است مطابق زیر اسکریپت گوگل را اضافه کنید  -->
     <script type="text/javascript">
       Object.defineProperty(HTMLScriptElement.prototype, "__src__", Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype, "src"));
       Object.defineProperty(HTMLScriptElement.prototype, "src", {
